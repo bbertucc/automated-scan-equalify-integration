@@ -1,0 +1,284 @@
+[
+  {
+    "slug": "automate_scanwcag2a",
+    "title": "WCAG 2.0 Level A",
+    "description": "",
+    "category": "WCAG Automate Scan Tags"
+  },
+  {
+    "slug": "automate_scanwcag2aa", 
+    "title": "WCAG 2.0 Level AA",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanwcag2aaa", 
+    "title": "WCAG 2.0 Level AAA",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanwcag21a", 
+    "title": "WCAG 2.1 Level A",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanwcag21aa", 
+    "title": "WCAG 2.1 Level AA",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanwcag21aaa", 
+    "title": "WCAG 2.1 Level AAA",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanwcag111", 
+    "title": "WCAG Success Criteria 1.1.1",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanwcag121", 
+    "title": "WCAG Success Criteria 1.2.1",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanwcag122", 
+    "title": "WCAG Success Criteria 1.2.2",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanwcag131", 
+    "title": "WCAG Success Criteria 1.3.1",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanwcag141", 
+    "title": "WCAG Success Criteria 1.4.1",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanwcag143", 
+    "title": "WCAG Success Criteria 1.4.3",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanwcag144", 
+    "title": "WCAG Success Criteria 1.4.4",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanwcag211", 
+    "title": "WCAG Success Criteria 2.1.1",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanwcag221", 
+    "title": "WCAG Success Criteria 2.2.1",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanwcag222", 
+    "title": "WCAG Success Criteria 2.2.2",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanwcag241", 
+    "title": "WCAG Success Criteria 2.4.1",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanwcag242", 
+    "title": "WCAG Success Criteria 2.4.2",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanwcag244", 
+    "title": "WCAG Success Criteria 2.4.4",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanwcag311", 
+    "title": "WCAG Success Criteria 3.1.1",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanwcag312", 
+    "title": "WCAG Success Criteria 3.1.2",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanwcag332", 
+    "title": "WCAG Success Criteria 3.3.2",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanwcag411", 
+    "title": "WCAG Success Criteria 4.1.1",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanwcag412", 
+    "title": "WCAG Success Criteria 4.1.2",
+    "category": "WCAG Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scansection508", 
+    "title": "Section 508",
+    "category": "Other Automate Scan Tags",
+    "description": "Section 508 is part of a 1998 amendment to the Rehabilitation Act of 1973. It requires all Federal electronic content to be accessible"
+  },
+  {
+    "slug": "automate_scansection50822a", 
+    "title": "Section 508.22.a",
+    "category": "Other Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scansection50822f", 
+    "title": "Section 508.22.f",
+    "category": "Other Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scansection50822g", 
+    "title": "Section 508.22.g",
+    "category": "Other Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scansection50822i", 
+    "title": "Section 508.22.i",
+    "category": "Other Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scansection50822j", 
+    "title": "Section 508.22.j",
+    "category": "Other Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scansection50822n", 
+    "title": "Section 508.22.n",
+    "category": "Other Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scansection50822o", 
+    "title": "Section 508.22.o",
+    "category": "Other Automate Scan Tags",
+    "description": ""
+  },
+  {
+    "slug": "automate_scanACT", 
+    "title": "ACT",
+    "category": "Other Automate Scan Tags",
+    "description": "ACT Rules are designed to harmonize how edge cases for WCAG and other accessibility guidance are tested."
+  },
+  {
+    "slug": "automate_scanbest-practice", 
+    "title": "Best Practices",
+    "category": "Other Automate Scan Tags",
+    "description": "Common accessibility best practices."
+  },
+  {
+    "slug": "automate_scancat.aria",
+    "title": "Aria",
+    "category": "Automate Scan Categories",
+    "description": ""
+  },
+  {
+    "slug": "automate_scancat.color",
+    "title": "Color",
+    "category": "Automate Scan Categories",
+    "description": ""
+  },
+  {
+    "slug": "automate_scancat.forms",
+    "title": "Forms",
+    "category": "Automate Scan Categories",
+    "description": "Automate Scan forms contains accessibility rules from the Automate Scan forms category."
+  },
+  {
+    "slug": "automate_scancat.keyboard",
+    "title": "Keyboard",
+    "category": "Automate Scan Categories",
+    "description": "Automate Scan keyboard contains accessibility rules from the Automate Scan keyboard category."
+  },
+  {
+    "slug": "automate_scancat.language",
+    "title": "Language",
+    "category": "Automate Scan Categories",
+    "description": "Automate Scan language contains accessibility rules from the Automate Scan language category."
+  },
+  {
+    "slug": "automate_scancat.name-role-value",
+    "title": "Name Role Value",
+    "category": "Automate Scan Categories",
+    "description": "Automate Scan name-role-value contains accessibility rules from the Automate Scan name-role-value category."
+  },
+  {
+    "slug": "automate_scancat.parsing",
+    "title": "Parsing",
+    "category": "Automate Scan Categories",
+    "description": "Automate Scan parsing contains accessibility rules from the Automate Scan parsing category."
+  },
+  {
+    "slug": "automate_scancat.semantics",
+    "title": "Semantics",
+    "category": "Automate Scan Categories",
+    "description": "Automate Scan semantics contains accessibility rules from the Automate Scan semantics category."
+  },
+  {
+    "slug": "automate_scancat.sensory-and-visual-cues",
+    "title": "Sensory and Visual Cues",
+    "category": "Automate Scan Categories",
+    "description": "Automate Scan sensory-and-visual-cues contains accessibility rules from the Automate Scan sensory-and-visual-cues category."
+  },
+  {
+    "slug": "automate_scancat.structure",
+    "title": "Structure",
+    "category": "Automate Scan Categories",
+    "description": "Automate Scan structure contains accessibility rules from the Automate Scan structure category."
+  },
+  {
+    "slug": "automate_scancat.tables",
+    "title": "Tables",
+    "category": "Automate Scan Categories",
+    "description": "Automate Scan tables contains accessibility rules from the Automate Scan tables category."
+  },
+  {
+    "slug": "automate_scancat.text-alternatives",
+    "title": "Text Alternatives",
+    "category": "Automate Scan Categories",
+    "description": "Automate Scan text-alternatives contains accessibility rules from the Automate Scan text-alternatives category."
+  },
+  {
+    "slug": "automate_scancat.time-and-media",
+    "title": "Time and Media",
+    "category": "Automate Scan Categories",
+    "description": "Automate Scan time-and-media contains accessibility rules from the Automate Scan time-and-media category."
+  }
+]
