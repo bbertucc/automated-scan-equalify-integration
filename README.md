@@ -1,4 +1,4 @@
-# Equalify Scan Integration
+# Automated Scan - Equalify Integration
 Install this with Equalify to enable automated Web UI testing.
 
 ## Steps to Install
