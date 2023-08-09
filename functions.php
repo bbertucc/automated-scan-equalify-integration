@@ -1,16 +1,16 @@
 <?php
 /**
- * Name: Automated Behaviors Test
+ * Name: Automated Scan
  * Description: An automated accessibility scan.
  * Author: Equalify
  */
 
 /**
- * WBA Fields
+ * Automated Scan Fields
  */
-function abt_fields(){
+function automated_scan_fields(){
 
-    $abt_fields = array(
+    $automated_scan_fields = array(
         
         // These fields are added to the database.
         'db' => [
@@ -18,7 +18,7 @@ function abt_fields(){
                 // Meta values.
                 'meta' => [
                     array(
-                        'name'     => 'abt_uri',
+                        'name'     => 'automated_scan_uri',
                         'value'     => '',
                     )
                 ]
@@ -31,8 +31,8 @@ function abt_fields(){
             // Meta settings.
             'meta' => [
                 array(
-                    'name'     => 'abt_uri',
-                    'label'    => 'abt-core URI (ie- https://abt.equalify.app/?url=)',
+                    'name'     => 'automated_scan_uri',
+                    'label'    => 'Automate Scan URI (ie- https://auto.equalify.app/?url=)',
                     'type'     => 'text',
                 )
             ]
@@ -42,45 +42,45 @@ function abt_fields(){
     );
 
     // Return fields
-    return $abt_fields;
+    return $automated_scan_fields;
 
 }
 
 /**
- * abt Tags
+ * automated_scan Tags
  */
-function abt_tags(){
+function automated_scan_tags(){
 
     // We don't know where helpers are being called, so we
     // have to set the directory if it isn't already set.
     if(!defined('__DIR__'))
         define('__DIR__', dirname(dirname(__FILE__)));
     
-    // Read the JSON file - pulled from https://abt.webaim.org/api/docs?format=json
-    $abt_tag_json = file_get_contents(__DIR__.'/abt_tags.json');
-    $abt_tags = json_decode($abt_tag_json,true);
+    // Read the JSON file - pulled from https://automated_scan.webaim.org/api/docs?format=json
+    $automated_scan_tag_json = file_get_contents(__DIR__.'/automated_scan_tags.json');
+    $automated_scan_tags = json_decode($automated_scan_tag_json,true);
 
-    // Convert abt format into Equalify format:
+    // Convert automated_scan format into Equalify format:
     // tags [ array('slug' => $value, 'name' => $value, 'description' => $value) ]
     $tags = array();
-    if(!empty($abt_tags)){
-        foreach($abt_tags as $abt_tag){
+    if(!empty($automated_scan_tags)){
+        foreach($automated_scan_tags as $automated_scan_tag){
 
             // First, let's prepare the description, which is
             // the summary and guidelines.
-            $description = '<p class="lead">'.$abt_tag['description'].'</p>';
+            $description = '<p class="lead">'.$automated_scan_tag['description'].'</p>';
             
             // Now lets put it all together into the Equalify format.
             array_push(
                 $tags, array(
-                    'title' => $abt_tag['title'],
-                    'category' => $abt_tag['category'],
+                    'title' => $automated_scan_tag['title'],
+                    'category' => $automated_scan_tag['category'],
                     'description' => $description,
 
-                    // abt-core uses periods, which get screwed up
+                    // Automate Scan uses periods, which get screwed up
                     // when equalify serializes them, so we're
                     // just not going to use periods
-                    'slug' => str_replace('.', '', $abt_tag['slug'])
+                    'slug' => str_replace('.', '', $automated_scan_tag['slug'])
 
                 )
             );
@@ -94,68 +94,68 @@ function abt_tags(){
 }
 
  /**
-  * abt URLs
-  * Maps site URLs to abt URLs for processing.
+  * Automate Scan URLs
+  * Maps site URLs to automated_scan URLs for processing.
   */
-function abt_urls($page_url) {
+function automated_scan_urls($page_url) {
 
-    // Require abt_uri
-    $abt_uri = DataAccess::get_meta_value('abt_uri');
-    if(empty($abt_uri)){
-        throw new Exception('abt-core URI is not entered. Please add the URI in the integration settings.');
+    // Require Automate Scan URI
+    $automated_scan_uri = DataAccess::get_meta_value('automated_scan_uri');
+    if(empty($automated_scan_uri)){
+        throw new Exception('Automate Scan URI is not entered. Please add the URI in the integration settings.');
     }else{
-        return $abt_uri.$page_url;
+        return $automated_scan_uri.$page_url;
     }
 
 }
 
 /**
- * abt Alerts
+ * Automate Scan Alerts
  * @param string response_body
  * @param string page_url
  */
-function abt_alerts($response_body, $page_url){
+function automated_scan_alerts($response_body, $page_url){
 
     // Our goal is to return alerts.
-    $abt_alerts = [];
-    $abt_json = $response_body; 
+    $automated_scan_alerts = [];
+    $automated_scan_json = $response_body; 
 
     // Decode JSON.
-    $abt_json_decoded = json_decode($abt_json);
+    $automated_scan_json_decoded = json_decode($automated_scan_json);
 
-    // Sometimes abt can't read the json.
-    if(empty($abt_json_decoded)){
+    // Sometimes automated_scan can't read the json.
+    if(empty($automated_scan_json_decoded)){
 
         // And add an alert.
         $alert = array(
-            'source'  => 'abt',
+            'source'  => 'automated_scan',
             'url'     => $page_url,
-            'message' => 'abt-core cannot reach the page.',
+            'message' => 'Automate Scan cannot reach the page.',
         );
-        array_push($abt_alerts, $alert);
+        array_push($automated_scan_alerts, $alert);
 
     }else{
 
-        // We're add a lit of violations.
-        $abt_violations = array();
+        // We add a lit of violations.
+        $automated_scan_violations = array();
 
-        // Show abt violations
-        foreach($abt_json_decoded[0]->violations as $violation){
+        // Show automated_scan violations
+        foreach($automated_scan_json_decoded[0]->violations as $violation){
 
             // Only show violations.
-            $abt_violations[] = $violation;
+            $automated_scan_violations[] = $violation;
 
         }
 
         // Add alerts.
-        if(!empty($abt_violations)) {
+        if(!empty($automated_scan_violations)) {
 
             // Setup alert variables.
-            foreach($abt_violations as $violation){
+            foreach($automated_scan_violations as $violation){
 
                 // Default variables.
                 $alert = array();
-                $alert['source'] = 'abt';
+                $alert['source'] = 'automated_scan';
                 $alert['url'] = $page_url;
 
                 // Setup tags.
@@ -168,7 +168,7 @@ function abt_alerts($response_body, $page_url){
                     $tags = $violation->tags;
                     $copy = $tags;
                     foreach($tags as $tag){
-                        $alert['tags'].= str_replace('.', '', 'abt_'.$tag);
+                        $alert['tags'].= str_replace('.', '', 'automated_scan_'.$tag);
                         if (next($copy ))
                             $alert['tags'].= ',';
                     }
@@ -183,7 +183,7 @@ function abt_alerts($response_body, $page_url){
                     $alert['more_info'] = $violation->nodes;
 
                 // Push alert.
-                $abt_alerts[] = $alert;
+                $automated_scan_alerts[] = $alert;
                 
             }
 
@@ -191,6 +191,6 @@ function abt_alerts($response_body, $page_url){
 
     }
     // Return alerts.
-    return $abt_alerts;
+    return $automated_scan_alerts;
 
 }
